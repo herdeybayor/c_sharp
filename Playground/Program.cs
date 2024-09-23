@@ -1,16 +1,19 @@
 ﻿using System;
+using Playground.Math;
 
-namespace Variables
+namespace Playground
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string s = "1";
-            int i = Convert.ToInt32(s);
-            int j = int.Parse(s);
-
-            Console.WriteLine("i={0}, j={1}", i, j);
+            var user1 = new Person();
+            user1.FirstName = "Sherifdeen";
+            user1.LastName = "Adebayo";
+            user1.Introduce();
+            
+            var result = Calculator.Add(1, 2);
+            Console.WriteLine(result);
         }
     }
 }
