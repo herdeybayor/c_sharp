@@ -6,8 +6,11 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            const float Pi = 3.14f;
-            Console.WriteLine(Pi);
+            string s = "1";
+            int i = Convert.ToInt32(s);
+            int j = int.Parse(s);
+
+            Console.WriteLine("i={0}, j={1}", i, j);
         }
     }
 }
